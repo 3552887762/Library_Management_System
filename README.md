@@ -12,15 +12,15 @@ loadimage(&img2, "D:\\c++实验\\C++图书管理系统\\界面.png", 640, 480, t
 当然我们可以自己增加音乐，只需要在对应路径传入mp3即可
 ```C++
 //播放音乐
-	//while (1) {
-	//	msg = GetMouseMsg();
-	//	//播放音乐
-	//	if (msg.uMsg == WM_LBUTTONDOWN && msg.x > 90 && msg.x < 134 && msg.y>186 && msg.y < 318) {
-	//		mciSendString("open C:\\Users\\Desktop\\1.mp3 alias m", 0, 0, 0);
-	//		mciSendString("play m repeat", 0, 0, 0);//开始播放音乐，repeat重复播
-	//		break;
-	//	}
-	//}
+while (1) {
+	msg = GetMouseMsg();
+	//播放音乐
+	if (msg.uMsg == WM_LBUTTONDOWN && msg.x > 90 && msg.x < 134 && msg.y>186 && msg.y < 318) {
+		mciSendString("open C:\\Users\\Desktop\\1.mp3 alias m", 0, 0, 0);
+		mciSendString("play m repeat", 0, 0, 0);//开始播放音乐，repeat重复播
+		break;
+	}
+}
 ```
 
 我们也可以根据自己的图片来进行修改
